@@ -1,0 +1,249 @@
+.havocwp-social-menu {
+	float: right;
+    position: relative;
+    z-index: 10;
+
+    &.simple-social {
+		right: -8px;
+	}
+
+	&.social-with-style {
+		right: -2px;
+	}
+
+    .social-menu-inner {
+    	@include display();
+		@include align-items( center );
+    	height: 74px;
+    }
+
+    ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+
+	    li {
+	    	float: left;
+    		position: relative;
+
+    		a {
+    			display: inline-block;
+			    background-color: transparent;
+			    color: $color-4;
+			    padding: 0 8px;
+			    line-height: 1;
+			    text-align: center;
+			    letter-spacing: 0;
+
+			    span {
+			    	width: 1em;
+   					height: 1em;
+			    	text-align: center;
+			    }
+
+			    &:hover {
+			    	background-color: transparent;
+			    }
+    		}
+
+    		&:first-child a {
+    			margin-left: 0;
+    		}
+
+    		&:last-child a {
+    			margin-right: 0;
+    		}
+
+		    &.havocwp-twitter a:hover { color: #46d4fe; }
+		    &.havocwp-facebook a:hover { color: #37589b; }
+		    &.havocwp-googleplus a:hover { color: #de5a49; }
+		    &.havocwp-pinterest a:hover { color: #cb2027; }
+		    &.havocwp-dribbble a:hover { color: #ea4c89; }
+		    &.havocwp-vk a:hover { color: #597BA5; }
+		    &.havocwp-instagram a:hover { color: #3F729B; }
+		    &.havocwp-linkedin a:hover { color: #3399CC; }
+		    &.havocwp-tumblr a:hover { color: #2C4762; }
+		    &.havocwp-github a:hover { color: #60b044; }
+		    &.havocwp-flickr a:hover { color: #fa4086; }
+		    &.havocwp-skype a:hover { color: #00AFF0; }
+		    &.havocwp-youtube a:hover { color: #C4302B; }
+		    &.havocwp-vimeo a:hover { color: #1ab7ea; }
+		    &.havocwp-vine a:hover { color: #00bf8f; }
+		    &.havocwp-xing a:hover { color: #006464; }
+		    &.havocwp-yelp a:hover { color: #C41200; }
+		    &.havocwp-tripadvisor a:hover { color: #589442; }
+		    &.havocwp-rss a:hover { color: #ff7900; }
+		    &.havocwp-email a:hover { color: #13aff0; }
+			&.havocwp-tiktok a:hover { color: #000000; }
+			&.havocwp-medium a:hover { color: #00ab6c; }
+			&.havocwp-telegram a:hover { color: #0088cc; }
+			&.havocwp-twitch a:hover { color: #6441a5; }
+			&.havocwp-line a:hover { color: #00c300; }
+			&.havocwp-qq a:hover { color: #febf1b; }
+			&.havocwp-facebook_group a:hover { color: #37589b; }
+			&.havocwp-slack a:hover { color: #4a154b; }
+			&.havocwp-threads a:hover { color: #000000; }
+			&.havocwp-mastodon a:hover { color: #563acc; }
+			&.havocwp-discord a:hover { color: #5865f2; }
+	    }
+	}
+
+	.colored ul li {
+		a {
+	    	position: relative;
+		    display: inline-block;
+		    font-size: 12px;
+		    color: $color-1;
+		    line-height: 1;
+    		padding: 1em;
+		    @include border-radius( 50% );
+		    vertical-align: middle;
+		    @include transition( all .3s ease-out );
+
+		    &:hover {
+		    	color: $color-1;
+		    }
+
+			.hvc-icon use {
+				stroke: $color-1;
+			}
+		}
+
+	    &.havocwp-twitter a { background-color: #46d4fe; }
+	    &.havocwp-twitter a:hover { background-color: #39b4d8; }
+	    &.havocwp-facebook a{ background-color: #37589b; }
+	    &.havocwp-facebook a:hover{ background-color: #2d477c; }
+	    &.havocwp-googleplus a{ background-color: #de5a49; }
+	    &.havocwp-googleplus a:hover { background-color: #bb4c3e; }
+	    &.havocwp-pinterest a { background-color: #cb2027; }
+	    &.havocwp-pinterest a:hover { background-color: #a91d23; }
+	    &.havocwp-dribbble a { background-color: #ea4c89; }
+	    &.havocwp-dribbble a:hover { background-color: #c64174; }
+	    &.havocwp-vk a { background-color: #597BA5; }
+	    &.havocwp-vk a:hover { background-color: #486384; }
+	    &.havocwp-instagram a { background-color: #3F729B; }
+	    &.havocwp-instagram a:hover { background-color: #315a7c; }
+	    &.havocwp-linkedin a{ background-color: #3399CC; }
+	    &.havocwp-linkedin a:hover { background-color: #2678a1; }
+	    &.havocwp-tumblr a { background-color: #2C4762; }
+	    &.havocwp-tumblr a:hover { background-color: #1d3042; }
+	    &.havocwp-github a { background-color: #60b044; }
+	    &.havocwp-github a:hover { background-color: #4f9237; }
+	    &.havocwp-flickr a { background-color: #fa4086; }
+	    &.havocwp-flickr a:hover { background-color: #c63169; }
+	    &.havocwp-skype a { background-color: #00AFF0; }
+	    &.havocwp-skype a:hover { background-color: #0291c6; }
+	    &.havocwp-youtube a { background-color: #C4302B; }
+	    &.havocwp-youtube a:hover { background-color: #982420; }
+	    &.havocwp-vimeo a { background-color: #1ab7ea; }
+	    &.havocwp-vimeo a:hover { background-color: #1494bd; }
+	    &.havocwp-vine a { background-color: #00bf8f; }
+	    &.havocwp-vine a:hover { background-color: #01906c; }
+	    &.havocwp-xing a { background-color: #006464; }
+	    &.havocwp-xing a:hover { background-color: #014646; }
+	    &.havocwp-yelp a { background-color: #C41200; }
+	    &.havocwp-yelp a:hover { background-color: #940f01; }
+	    &.havocwp-tripadvisor a { background-color: #589442; }
+	    &.havocwp-tripadvisor a:hover { background-color: #426f32; }
+	    &.havocwp-rss a { background-color: #ff7900; }
+	    &.havocwp-rss a:hover { background-color: #d46603; }
+	    &.havocwp-email a { background-color: #13aff0; }
+	    &.havocwp-email a:hover { background-color: #0f8dc2; }
+		&.havocwp-tiktok a { background-color: #000000; }
+	    &.havocwp-tiktok a:hover { background-color: #141414; }
+		&.havocwp-medium a { background-color: #00ab6c; }
+	    &.havocwp-medium a:hover { background-color: #03945f; }
+		&.havocwp-telegram a { background-color: #0088cc; }
+	    &.havocwp-telegram a:hover { background-color: #0da4f0; }
+		&.havocwp-twitch a { background-color: #6441a5; }
+		&.havocwp-twitch a:hover { background-color: #702cee; }
+		&.havocwp-line a { background-color: #00c300; }
+		&.havocwp-line a:hover { background-color: #09f309; }
+		&.havocwp-qq a { background-color: #febf1b; }
+		&.havocwp-qq a:hover { background-color: #db9f07; }
+		&.havocwp-facebook_group a { background-color: #37589b; }
+		&.havocwp-facebook_group a:hover { background-color: #2d477c; }
+		&.havocwp-slack a { background-color: #4a154b; }
+		&.havocwp-slack a:hover { background-color: #3d0a3e; }
+		&.havocwp-threads a { background-color: #000000; }
+		&.havocwp-threads a:hover { background-color: #191919; }
+		&.havocwp-mastodon a { background-color: #6364ff; }
+		&.havocwp-mastodon a:hover { background-color: #563acc; }
+		&.havocwp-discord a { background-color: #5865f2; }
+		&.havocwp-discord a:hover { background-color: #7289da; }
+	}
+
+	.minimal ul li {
+		a {
+	    	position: relative;
+		    display: inline-block;
+		    font-size: 12px;
+		    background-color: transparent;
+		    color: #bbb;
+		    border: 1px solid #ccc;
+		    line-height: 1;
+    		padding: 1em;
+		    @include border-radius( 50% );
+		    vertical-align: middle;
+		    @include transition( all .3s ease-out );
+
+		    &:hover {
+		    	background-color: transparent;
+		    }
+		}
+
+	    &.havocwp-twitter a:hover { color: #46d4fe; border-color: #46d4fe; }
+	    &.havocwp-facebook a:hover { color: #37589b; border-color: #37589b; }
+	    &.havocwp-googleplus a:hover { color: #de5a49; border-color: #de5a49; }
+	    &.havocwp-pinterest a:hover { color: #cb2027; border-color: #cb2027; }
+	    &.havocwp-dribbble a:hover { color: #ea4c89; border-color: #ea4c89; }
+	    &.havocwp-vk a:hover { color: #597BA5; border-color: #597BA5; }
+	    &.havocwp-instagram a:hover { color: #3F729B; border-color: #3F729B; }
+	    &.havocwp-linkedin a:hover { color: #3399CC; border-color: #3399CC; }
+	    &.havocwp-tumblr a:hover { color: #2C4762; border-color: #2C4762; }
+	    &.havocwp-github a:hover { color: #60b044; border-color: #60b044; }
+	    &.havocwp-flickr a:hover { color: #fa4086; border-color: #fa4086; }
+	    &.havocwp-skype a:hover { color: #00AFF0; border-color: #00AFF0; }
+	    &.havocwp-youtube a:hover { color: #C4302B; border-color: #C4302B; }
+	    &.havocwp-vimeo a:hover { color: #1ab7ea; border-color: #1ab7ea; }
+	    &.havocwp-vine a:hover { color: #00bf8f; border-color: #00bf8f; }
+	    &.havocwp-xing a:hover { color: #006464; border-color: #006464; }
+	    &.havocwp-yelp a:hover { color: #C41200; border-color: #C41200; }
+	    &.havocwp-tripadvisor a:hover { color: #589442; border-color: #589442; }
+	    &.havocwp-rss a:hover { color: #ff7900; border-color: #ff7900; }
+	    &.havocwp-email a:hover { color: #13aff0; border-color: #13aff0; }
+	    &.havocwp-tiktok a:hover { color: #000000; border-color: #000000; }
+	    &.havocwp-medium a:hover { color: #00ab6c; border-color: #00ab6c; }
+	    &.havocwp-telegram a:hover { color: #0088cc; border-color: #0088cc;}
+		&.havocwp-twitch a:hover { color: #702cee; border-color: #702cee; }
+		&.havocwp-line a:hover { color: #00c300; border-color: #00c300; }
+		&.havocwp-qq a:hover { color: #febf1b; border-color: #febf1b; }
+		&.havocwp-facebook_group a:hover { color: #37589b; border-color: #37589b; }
+		&.havocwp-slack a:hover { color: #4a154b; border-color: #4a154b; }
+		&.havocwp-threads a:hover { color: #000000; border-color: #000000; }
+		&.havocwp-mastodon a:hover { color: #563acc; border-color: #563acc; }
+		&.havocwp-discord a:hover { color: #5865f2; border-color: #7289da; }
+	}
+
+	.dark ul li a {
+    	position: relative;
+	    display: inline-block;
+	    font-size: 12px;
+	    background-color: $color-2;
+	    color: $color-1;
+	    line-height: 1;
+		padding: 1em;
+	    @include border-radius( 50% );
+	    vertical-align: middle;
+	    @include transition( all .3s ease-out );
+
+	    &:hover {
+	    	background-color: #000;
+	    	color: $color-1;
+	    }
+
+		.hvc-icon use {
+			stroke: $color-1;
+		}
+	}
+}
